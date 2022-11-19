@@ -1,0 +1,71 @@
+
+.wave {
+    float: left;
+    padding-top: 5%;
+    margin: 40px;
+    animation: wave ease-in-out .8s infinite alternate;
+    transform-origin: center -66px;
+    margin-bottom: 15%;
+
+}
+
+.wave:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.wave img {
+    border: 5px solid black;
+    border-radius: 10%;
+    display: block;
+    width: 100px;
+    height: 200px;
+}
+
+.wave figcaption {
+    display: block;
+    text-align: center;
+    background-color: whitesmoke;
+    background-size: auto;
+    position: absolute;
+    left: 25%;
+    width: fit-content;
+}
+
+.wave:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #ffffff;
+    top: -10px;
+    left: 50%;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+.wave:before {
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url();
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}

@@ -109,11 +109,6 @@
         padding: 2%;
     }
 
-    .portrait  {
-
-        display: flexbox;
-        background-size: contain;
-    }
     .contact {
         color: black;
     }

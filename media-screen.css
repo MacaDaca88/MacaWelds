@@ -1,5 +1,5 @@
 /* For screens with width smaller than 400px */
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 600px) {
     body {
         background-color: grey;
         background-image: url('./images/backgrounds/welding_sparks_portrait.jpg');

@@ -28,20 +28,24 @@
 .contact {
     display: flexbox;
     background-color: bisque;
-    border-radius: 20%;
-    padding-bottom: 1%;
-    padding-left: 1%;
+    border-radius: 10%;
+    padding-bottom: 3%;
+    padding-left: 3%;
     position: absolute;
-    width: fit-content;
+    width: 30%;
     top: 30%;
 }
 
 .contact p {
     color: green;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .contact a {
     color: blue;
+    font-style: italic;
+    font-size: 15px;
 }
 
 .enter {

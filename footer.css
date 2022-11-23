@@ -3,22 +3,12 @@
     width: fit-content;
     height: fit-content;
     position: fixed;
-    bottom: 0%;
+    bottom: 2%;
     left: 2%;
     padding: 1%;
-    text-align: center;
+    text-align: left;
 }
 
-.footer:hover {
-    .footer {
-        background-size: contain;
-        width: fit-content;
-        height: fit-content;
-        position: fixed;
-        bottom: 0%;
-        left: 2%;
-        padding: 1%;
-        text-align: center;
-    }
-
+.material-icons:hover {
+ box-shadow: 5px 5px 5px;
 }

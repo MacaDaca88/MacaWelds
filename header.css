@@ -30,7 +30,7 @@ h2 {
     color: black;
     text-align: center;
     font-size: 30px;
-    width: 200px;
+    width: 600px;
     height: fit-content;
 
 }
@@ -38,8 +38,8 @@ h2 {
 h3 {
     background-color: antiquewhite;
     position: absolute;
-    left: 25%;
-    width: 500px;
+    left: 50%;
+    width: fit-content;
     border-end-start-radius: 40%;
     padding-left: 2%;
     padding-right: 2%;
@@ -51,12 +51,12 @@ h3 {
 
 h4 {
     display: flexbox;
-    background-color: rgba(23, 165, 35, 0.7);
-    position: relative;
-    width: 80%;
-    left: 1%;
-    border-radius: 10%;
-    padding: 2%;
+    background-color: bisque;
+    border: 10px double green;
+    background-size: contain;
+    width: 100%;
+    border-radius: 2px 24px;
+
 }
 
 h5 {

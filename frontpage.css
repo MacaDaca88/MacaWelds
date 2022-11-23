@@ -1,0 +1,30 @@
+.info {
+
+    display:flexbox;
+    background-color:rgba(0, 0, 0, 0.2);
+    margin: 1px;
+}
+
+.rowsinfo {
+    margin: 1px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.rowsinfo,
+.rowsinfows>.columnsinfo {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.columnsinfo {
+    float: right;
+    width: 50%;
+}
+
+/* Clear floats after rows */
+.rowsinfo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

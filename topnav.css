@@ -1,3 +1,14 @@
+.topnav {
+    background-size: contain;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    padding: 1%;
+    text-align: left;
+}
+
 .topnav a {
     position: fixed;
     background-color: aliceblue;
@@ -10,4 +21,32 @@
     font-size: 4vw;
     padding-right: 1%;
     padding-top: 1%;
+}
+
+.call {
+    display: flexbox;
+    background-size: contain;
+    width: fit-content;
+    position: relative;
+    left: 40%;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: 5px 5px black;
+    color: red;
+    text-transform: lowercase;
+}
+
+.call:hover {
+    display: flexbox;
+    background-size: contain;
+    width: fit-content;
+    position: relative;
+    left: 40%;
+    text-align: center;
+    font-size: 80px;
+    font-style: italic;
+    text-shadow: 5px 5px red;
+    color: black;
+    text-transform: lowercase;
 }

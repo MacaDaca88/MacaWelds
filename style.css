@@ -1,16 +1,72 @@
+/*  this is all the differant classes created for the div needed */
+section {
+    background-color: blanchedalmond;
+    background-size: auto;
+    background-position: center;
+    width: fit-content;
+    text-align: center;
+    font-size: 12px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    margin-left: 5%;
+}
 
+.hours {
+    display: flexbox;
+    background-color: bisque;
+    border: 10px double green;
+    background-size: contain;
+    width: 30%;
+    border-radius: 20px 20px 20px 0px;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.hours:hover {
+    width: 48%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.greeting {
+    display: flexbox;
+    background-color: bisque;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0%;
+}
 
 .About {
     display: flexbox;
-    background-color: rgb(250, 235, 215, 0.6);
-    position: absolute;
-    left: 10%;
-    top: 25%;
+    background-color: bisque;
+    border: 7px double green;
+    background-size: contain;
     width: 30%;
-    border-end-end-radius: 45%;
-    border: 5px solid black;
-    padding: 1%;
+    border-radius: 2px 24px;
+    padding: 10px;
+    left: 15%;
+}
 
+/* is the container that holds FAQ questions */
+.FAQ {
+    display: flexbox;
+    background-color: bisque;
+    border: 10px double green;
+    background-size: contain;
+    width: 80%;
+    border-radius: 2px 24px;
+    padding: 6px;
+    left: 15%;
+    font-size: 12px;
+    font-style: italic;
+    text-shadow: 5px 2px 8px black;
+}
+
+.FAQ:hover {
+    font-style: normal;
+    text-shadow: 1px 1px 1px white;
 }
 
 .title {
@@ -48,6 +104,7 @@
     font-size: 15px;
 }
 
+/* the main button on index that allows you to enter page */
 .enter {
     display: flexbox;
     background-size: contain;
@@ -62,6 +119,7 @@
     text-transform: lowercase;
 }
 
+/* enter page button features when mouse held over before click */
 .enter:hover {
     display: flexbox;
     background-size: contain;
@@ -76,7 +134,7 @@
     text-transform: uppercase;
 }
 
-/* Popup container - can be anything you want */
+/* Popup container - is the box that holds everything for popup */
 .popup {
     position: relative;
     display: inline-block;
@@ -143,36 +201,7 @@
     }
 }
 
-.row {
-    margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row>.column {
-    padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-}
-
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: antiquewhite;
-    padding: 10px;
-
-}
-
+/* bitcoin icon and link */
 .bitcoin {
     display: flexbox;
     background-size: contain;

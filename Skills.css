@@ -3,9 +3,17 @@
     background-color: bisque;
     border: 10px double green;
     background-size: contain;
-    width: 40%;
+    width: 50%;
     border-radius: 2px 24px;
-    padding: 10px
+    padding: 10px;
+    font-size: 10px;
+    box-shadow: 5px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.skills:hover {
+
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .criteria {
@@ -14,7 +22,33 @@
     border: 10px double green;
     background-size: contain;
     width: 40%;
-    border-radius: 2px 24px;
-    padding: 10px left: 15%;
+    border-radius: 0px 20px 0px 0px;
+    padding: 10px;
+    left: 15%;
+    font-size: 10px;
 
+}
+
+.criteria:hover {
+
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.learning {
+    display: flexbox;
+    background-color: bisque;
+    border: 10px double green;
+    position: sticky;
+    right: 10%;
+    background-size: contain;
+    width: 40%;
+    border-radius: 0px 20px 0px 0px;
+    padding: 10px;
+    left: 15%;
+    font-size: 10px;
+}
+.learning:hover {
+
+    font-size: 15px;
 }

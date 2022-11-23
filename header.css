@@ -1,0 +1,81 @@
+h1 {
+    display: flexbox;
+    background-size: contain;
+    position: relative;
+    left: 25%;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(243, 233, 233);
+    text-shadow: 2px 2px 2px;
+    text-align: center;
+    text-shadow: 5px 5px red;
+    font-size: 10vw;
+    margin-top: 1%;
+    padding-bottom: 1%;
+}
+
+h1:hover {
+
+    text-shadow: 5px 5px black;
+
+}
+
+h2 {
+    display: flexbox;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15%;
+    position: relative;
+    left: 20%;
+    bottom: 5%;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    width: 200px;
+    height: fit-content;
+
+}
+
+h3 {
+    background-color: antiquewhite;
+    position: absolute;
+    left: 25%;
+    width: 500px;
+    border-end-start-radius: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    display: flexbox;
+    background-color: rgba(23, 165, 35, 0.7);
+    position: relative;
+    width: 80%;
+    left: 1%;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+h5 {
+    display: flexbox;
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+    position: relative;
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+h6 {
+    display: flexbox;
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+    position: relative;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 1%;
+}

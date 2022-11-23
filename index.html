@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 <html lang="en-nz">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="macawelds">
-        <meta name="description" content="Custom Welding">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" type="text/css" href="./style.css">
-        <link rel="stylesheet" type="text/css" href="./wave.css">
-        <link rel="stylesheet" type="text/css" href="./media-screen.css">
-        <link rel="icon" href="./images/MacaWelds.png">
-        <link rel="script" type="text/js" href="./script.js">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="macawelds">
+    <meta name="description" content="Custom Welding">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./wave.css">
+    <link rel="stylesheet" type="text/css" href="./media-screen.css">
+    <link rel="stylesheet" type="text/css" href="./Skills.css">
+    <link rel="stylesheet" type="text/css" href="./footer.css">
+    <link rel="stylesheet" type="text/css" href="./topnav.css">
 
-    <body>
+    <link rel="icon" href="./images/MacaWelds.png">
+    <link rel="script" type="text/js" href="./script.js">
 
-        <title>Maca~Welds</title>
-        <div class="topnav">
-            <div class="material-icons">
-                <a href="./galleryfront.html" style="font-size:40px; color:green;">photo_library</a>
-                <a href="./contact.html" style="font-size:40px; color:green;">contacts</a>
-                <a href="./FAQ.html" style="font-size:40px; color:green;">help_center</a>
+    <script>
 
-            </div>
-            <br>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let user = getCookie("username");
+            if (user != "") {
+                alert("Welcome again " + user);
+            } else {
+                user = prompt("Please enter your name:", "");
+                if (user != "" && user != null) {
+                    setCookie("username", user, 30);
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <title>Maca~Welds</title>
+    <div class="topnav">
+        <div class="material-icons">
+            <a href="./galleryfront.html" style="font-size:40px; color:green;">photo_library</a>
+            <a href="./contact.html" style="font-size:40px; color:green;">contacts</a>
+            <a href="./FAQ.html" style="font-size:40px; color:green;">help_center</a>
+
         </div>
+        <br>
+    </div>
 
-        <img src="./images/MacaWelds.png" alt="MacaWelds" style="position:relative; left: 25%;  width:50%;">
-        <div class="enter">
-            <a href="./frontpage.html" style="color:red; background-color: rgb(14, 10, 10, 0.3)">Enter Here</a>
-        </div>
 
-        <h2>Engineer 10yrs+ on MIG 3D SolidWorks Drawings</h2>
+    <img src="./images/MacaWelds.png" alt="MacaWelds" style="position:relative; left: 25%;  width:50%;">
+    <div class="enter">
+        <a href="./frontpage.html" style="color:red; background-color: rgb(14, 10, 10, 0.3)">Enter Here</a>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
 
-        <div class="footer">
-            <a href="https://molten.org.nz/"><i class="material-icons"
-                    style="font-size:30px; color:green;">recycling</i>
-            </a>
-            <i class="material-icons" style="font-size:30px; color:blue;">recommend</i>
-            <a href="https://ecocentral.co.nz/ecoshop"><i class="material-icons"
-                    style="font-size:30px; color:green;">eco</i>
-            </a>
-            <a href="https://www.worksafe.govt.nz/"><i class="material-icons"
-                    style="font-size:30px; color:red;">health_and_safety</i>
-            </a>
-            <a href="mailto:MacaWelds@gmail.com">MacaWelds@gmail.com</a>
-        </div>
-    </body>
+    <h2>Engineer 10yrs+ on MIG 3D SolidWorks Drawings</h2>
+
+ 
+
+    </div>
+    <div class="footer">
+        <a href="https://molten.org.nz/"><i class="material-icons" style="font-size:30px; color:green;">recycling</i>
+        </a>
+        <i class="material-icons" style="font-size:30px; color:blue;">recommend</i>
+        <a href="https://ecocentral.co.nz/ecoshop"><i class="material-icons"
+                style="font-size:30px; color:green;">eco</i>
+        </a>
+        <a href="https://www.worksafe.govt.nz/"><i class="material-icons"
+                style="font-size:30px; color:red;">health_and_safety</i>
+        </a>
+        <a href="mailto:MacaWelds@gmail.com">MacaWelds@gmail.com</a>
+        <b>Created By King MacaDaca88 </b>
+            <a href="https://pulzarfm.co.nz"
+                style="font-style:italic; font-size: 30px; color: white; text-align:center;">
+                100.9 Pulzar FM </a>
+            <audio controls>
+                <source src="https://icecast.mediaworks.nz/PulzarFM">
+            </audio>
+        </b>
+    </div>
+
+    <body onload="checkCookie()"></body>
 
 </html>

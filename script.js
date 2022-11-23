@@ -1,3 +1,4 @@
+
 // When the user clicks on div, open the popup
 function myFunction(hover) {
   var popup = document.getElementById("myPopup");
@@ -5,9 +6,9 @@ function myFunction(hover) {
 }
 
 function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
+  if (typeof (Storage) !== "undefined") {
     if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
+      localStorage.clickcount = Number(localStorage.clickcount) + 1;
     } else {
       localStorage.clickcount = 1;
     }
@@ -15,4 +16,19 @@ function clickCounter() {
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
+}
+
+const x = document.getElementById("demo");
+    
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
 }

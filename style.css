@@ -1,267 +1,182 @@
 
-    .topnav {
-        position: fixed;
-        top: 0%;
-        left: 1%;
-        height: 25px;
-        width: auto;
-        color: black;
-        text-align: right;
-        font-size: 4vw;
-        padding-right: 1%;
-        padding-top: 1%;
+
+.About {
+    display: flexbox;
+    background-color: rgb(250, 235, 215, 0.6);
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 30%;
+    border-end-end-radius: 45%;
+    border: 5px solid black;
+    padding: 1%;
+
+}
+
+.title {
+
+    display: flexbox;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 25%;
+    width: fit-content;
+    border-radius: 40%;
+    border: 5px solid black;
+
+}
+
+.contact {
+    display: flexbox;
+    background-color: bisque;
+    border-radius: 20%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    position: absolute;
+    width: fit-content;
+    top: 30%;
+}
+
+.contact p {
+    color: green;
+}
+
+.contact a {
+    color: blue;
+}
+
+.enter {
+    display: flexbox;
+    background-size: contain;
+    width: fit-content;
+    position: relative;
+    left: 40%;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: 5px 5px gold;
+    color: red;
+    text-transform: lowercase;
+}
+
+.enter:hover {
+    display: flexbox;
+    background-size: contain;
+    width: fit-content;
+    position: relative;
+    left: 35%;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: 5px 5px gold;
+    color: red;
+    text-transform: uppercase;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
-    .footer {
-        background-size: contain;
-        width: fit-content;
-        height: fit-content;
-        position: fixed;
-        bottom: 0%;
-        left: 2%;
-        padding: 1%;
-        text-align: center;
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
-    h1 {
-        display: flexbox;
-        background-size: contain;
-        position: relative;
-        left: 25%;
-        width: fit-content;
-        height: fit-content;
-        color: rgb(243, 233, 233);
-        text-shadow: 2px 2px 2px;
-        text-align: center;
-        text-shadow: 5px 5px red;
-        font-size: 10vw;
-        margin-top: 1%;
-        padding-bottom: 1%;
+    to {
+        opacity: 1;
     }
+}
 
-    h1:hover {
+.row {
+    margin: 8px -16px;
+}
 
-        text-shadow: 5px 5px black;
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+    padding: 8px;
+}
 
-    }
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
 
-    h2 {
-        display: flexbox;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 15%;
-        position: relative;
-        left: 20%;
-        bottom: 5%;
-        color: black;
-        text-align: center;
-        font-size: 3vw;
-        width: fit-content;
-        height: fit-content;
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-    }
+/* Content */
+.content {
+    background-color: antiquewhite;
+    padding: 10px;
 
-    h3 {
-        background-color: antiquewhite;
-        position: absolute;
-        left: 25%;
-        width: 500px;
-        border-end-start-radius: 40%;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        font-size: 30px;
-        text-align: center;
-    }
+}
 
-    h4 {
-        display: flexbox;
-        background-color: rgba(23, 165, 35, 0.7);
-        position: relative;
-        width: 80%;
-        left: 1%;
-        border-radius: 10%;
-        padding: 2%;
-    }
+.bitcoin {
+    display: flexbox;
+    background-size: contain;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    bottom: 0%;
+    left: 1%;
+    text-align: center;
 
-    .About {
-        display: flexbox;
-        background-color: rgb(250, 235, 215, 0.6);
-        position: absolute;
-        left: 10%;
-        top: 25%;
-        width: 30%;
-        border-end-end-radius: 45%;
-        border: 5px solid black;
-        padding: 1%;
-
-    }
-
-    .title {
-
-        display: flexbox;
-        background-color: antiquewhite;
-        position: absolute;
-        left: 25%;
-        width: fit-content;
-        border-radius: 40%;
-        border: 5px solid black;
-
-    }
-
-    .contact {
-        display: flexbox;
-        background-color: bisque;
-        border-radius: 20%;
-        padding-bottom: 1%;
-        padding-left: 1%;
-        position: absolute;
-        width: fit-content;
-        top: 30%;
-    }
-
-    .contact p {
-        color: green;
-    }
-
-    .contact a {
-        color: blue;
-    }
-
-    .enter {
-        display: flexbox;
-        background-size: contain;
-        width: fit-content;
-        position: relative;
-        left: 40%;
-        text-align: center;
-        font-size: 60px;
-        font-style: italic;
-        text-shadow: 5px 5px gold;
-        color: red;
-        text-transform: lowercase;
-    }
-
-    .enter:hover {
-        display: flexbox;
-        background-size: contain;
-        width: fit-content;
-        position: relative;
-        left: 35%;
-        text-align: center;
-        font-size: 60px;
-        font-style: italic;
-        text-shadow: 5px 5px gold;
-        color: red;
-        text-transform: uppercase;
-    }
-
-    /* Popup container - can be anything you want */
-    .popup {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-
-    /* The actual popup */
-    .popup .popuptext {
-        visibility: hidden;
-        width: 160px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 8px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -80px;
-    }
-
-    /* Popup arrow */
-    .popup .popuptext::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-    }
-
-    /* Toggle this class - hide and show the popup */
-    .popup .show {
-        visibility: visible;
-        -webkit-animation: fadeIn 1s;
-        animation: fadeIn 1s;
-    }
-
-    /* Add animation (fade in the popup) */
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .row {
-        margin: 8px -16px;
-    }
-
-    /* Add padding BETWEEN each column */
-    .row,
-    .row>.column {
-        padding: 8px;
-    }
-
-    /* Create four equal columns that floats next to each other */
-    .column {
-        float: left;
-        width: 25%;
-    }
-
-    /* Clear floats after rows */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /* Content */
-    .content {
-        background-color: antiquewhite;
-        padding: 10px;
-
-    }
-
-    .bitcoin {
-        display: flexbox;
-        background-size: contain;
-        width: fit-content;
-        height: fit-content;
-        position: fixed;
-        bottom: 0%;
-        left: 1%;
-        text-align: center;
-
-    }
-
+}

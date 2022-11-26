@@ -30,21 +30,23 @@ section {
     font-size: 15px;
     font-weight: bolder;
 }
+
 .mail {
 
-    font-size:20px;
+    font-size: 20px;
 }
+
 .mail:hover {
     font-size: 50px;
 }
+
 .greeting {
     display: flexbox;
     background-color: bisque;
     font-size: 50px;
     text-align: center;
-
     margin: 7%;
-border-radius: 25px;
+    border-radius: 25px;
 }
 
 .About {

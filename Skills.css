@@ -48,7 +48,8 @@
     left: 15%;
     font-size: 10px;
 }
-.learning:hover {
 
+.learning:hover {
+    font-weight: bolder;
     font-size: 15px;
 }

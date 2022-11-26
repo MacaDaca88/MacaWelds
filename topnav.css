@@ -3,7 +3,7 @@
     width: fit-content;
     height: fit-content;
     position: fixed;
-    bottom: 2%;
+    top: 2%;
     left: 2%;
     padding: 1%;
     text-align: left;
@@ -13,7 +13,7 @@
     position: fixed;
     background-color: aliceblue;
     top: 0%;
-    left: 1%;
+    left: 0%;
     height: 25px;
     width: auto;
     color: black;
@@ -23,12 +23,20 @@
     padding-top: 1%;
 }
 
+.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    left: 0%;
+}
+
 .call {
     display: flexbox;
     background-size: contain;
     width: fit-content;
     position: relative;
-    left: 40%;
+    left: 0%;
     text-align: center;
     font-size: 60px;
     font-style: italic;

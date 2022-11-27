@@ -47,6 +47,8 @@ section {
     text-align: center;
     margin: 7%;
     border-radius: 25px;
+    border: 2px double black;
+    
 }
 
 .About {

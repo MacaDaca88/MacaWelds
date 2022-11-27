@@ -79,3 +79,13 @@ h6 {
     margin-bottom: 0%;
     margin-left: 1%;
 }
+.head {
+
+    border: 5px double black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    margin: 10px;
+    position: relative;
+    top: 10px;
+}

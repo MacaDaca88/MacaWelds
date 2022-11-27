@@ -8,7 +8,7 @@
     padding: 1%;
     text-align: left;
 }
-
+/*
 .topnav a {
     position: fixed;
     background-color: aliceblue;
@@ -22,14 +22,14 @@
     padding-right: 1%;
     padding-top: 1%;
 }
-
+/*
 .sticky {
     position: -webkit-sticky;
-    /* Safari */
     position: sticky;
     top: 0;
     left: 0%;
 }
+*/
 
 .call {
     display: flexbox;
